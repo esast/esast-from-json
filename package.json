@@ -1,0 +1,31 @@
+{
+	"name": "esast-from-json",
+	"version": "0.0.0",
+	"files": ["lib", "src"],
+	"license": "Unlicense",
+	"repository": "esast/esast-from-json",
+	"typings": "from-json.d.ts",
+	"scripts": {
+		"build": "gulp build-src",
+		"watch": "gulp watch-src",
+		"test": "node test.js",
+		"lint": "tslint src/*.ts src/*/*.ts",
+		"TODO-doc": "typedoc from-json.ts --out doc --name from-json --readme readme.md --module umd --target ES6",
+		"TODO-all": "npm run build && npm run lint && npm run doc"
+	},
+	"dependencies": {
+		"esast": "esast/esast",
+		"op": "esast/op"
+	},
+	"devDependencies": {
+		"chai": "3.4.1",
+		"espree": "2.2.5",
+		"gulp": "3.9.0",
+		"gulp-typescript-esast": "esast/gulp-typescript-esast",
+		"source-map-support": "0.4.0",
+		"tslint": "3.2.2-dev.1",
+		"tslint-config-esast": "esast/tslint-config-esast",
+		"typedoc": "0.3.12",
+		"typescript": "1.8.0-dev.20151220"
+	}
+}

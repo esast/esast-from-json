@@ -1,0 +1,14 @@
+import { Super } from 'esast/lib/Class';
+import Declaration, { VariableDeclaration } from 'esast/lib/Declaration';
+import Expression, { MemberExpression, SpreadElement } from 'esast/lib/Expression';
+import Identifier from 'esast/lib/Identifier';
+import Pattern from 'esast/lib/Pattern';
+import { BlockStatement } from 'esast/lib/Statement';
+export declare function fromExpressionOrDeclaration(_: any): Expression | Declaration;
+export declare function fromBlockStatementOrExpression(_: any): BlockStatement | Expression;
+export declare function fromExpressionOrSuper(_: any): Expression | Super;
+export declare function fromExpressionOrSpreadElement(_: any): Expression | SpreadElement;
+export declare function fromIdentifierOrVariableDeclaration(_: any): Identifier | VariableDeclaration;
+export declare function fromIdentifierOrMemberExpression(_: any): Identifier | MemberExpression;
+export declare function fromPatternOrMemberExpression(_: any): Pattern | MemberExpression;
+export declare function fromExpressionOrVariableDeclaration(_: any): Expression | VariableDeclaration;
